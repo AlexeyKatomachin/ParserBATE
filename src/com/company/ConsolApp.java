@@ -16,8 +16,8 @@ public class ConsolApp
     public void ConsolApp ()
     {
         System.out.println("ConsolApp for working whith .... ");
-        System.out.println("Type"+ COMMAND + "help" + END + "for list of commands; " +
-                            COMMAND + "Quit" + END + "to quit.");
+        System.out.println("Type "+ COMMAND + "help" + END + " for list of commands; " +
+                            COMMAND + "quit" + END + " to quit.");
         inputPreWrite();
     }
 
@@ -41,6 +41,8 @@ public class ConsolApp
     private boolean isCommand (String input,Scanner in) throws IOException, AddressException {
         Settings settings = new Settings();
         MailSender mailSender = new MailSender();
+        ToCalender toCalender = new ToCalender();
+        HTMLParser htmlParser = new HTMLParser();
         String[] command = input.split(" ");
         switch(command[0])
         {
@@ -61,6 +63,8 @@ public class ConsolApp
                 return true;
             case "start":
                 mailSender.MailSender(mailFromSend,mailToSend,host);
+                htmlParser.HTMLParser();
+                toCalender.ToCalender(htmlParser.text,htmlParser.secondComand);
                 return true;
             case "quit":
             case "exit":
@@ -73,12 +77,12 @@ public class ConsolApp
 
     private void helper ()
     {
-        System.out.println("Command" + COMMAND + "start" + END + "for STARTING the program KatSender");
-        System.out.println("Command" + COMMAND + "quit" + END + "or" + COMMAND + "exit" + END
-                + "for ENDING the program KatSender");
-        System.out.println("Command" + COMMAND + "chTime" + END + "for chang Time of updating");
-        System.out.println("Command" + COMMAND + "chHost" + END + "for chang Host of connection");
-        System.out.println("Command" + COMMAND + "chMailTo" + END + "for chang address of Mail ON which will sending Mails");
-        System.out.println("Command" + COMMAND + "chMailFrom" + END + "for chang address of Mail FROM which will sending Mails");
+        System.out.println("Command " + COMMAND + "start" + END + " for STARTING the program KatSender");
+        System.out.println("Command " + COMMAND + "quit" + END + " or " + COMMAND + "exit" + END
+                + " for ENDING the program KatSender");
+        System.out.println("Command " + COMMAND + "chTime" + END + " for chang Time of updating");
+        System.out.println("Command " + COMMAND + "chHost" + END + " for chang Host of connection");
+        System.out.println("Command " + COMMAND + "chMailTo" + END + " for chang address of Mail ON which will sending Mails");
+        System.out.println("Command " + COMMAND + "chMailFrom" + END + " for chang address of Mail FROM which will sending Mails");
     }
 }

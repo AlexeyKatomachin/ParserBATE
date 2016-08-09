@@ -12,6 +12,8 @@ public class HTMLParser
 {
     private static String wort = "Борисов";
 
+    public String secondComand,firstComand,TimeAndPlace,text;
+
     public void HTMLParser() throws IOException {
         Document doc = null;
         Element next_game;
@@ -30,12 +32,12 @@ public class HTMLParser
             dats = next_game.getElementsByTag("p");
             for (Element data : dats)
             {
-                String text = data.text();
+                text = data.text();
                 if (text.indexOf(wort)!= -1)
                 {
-                    String secondComand = next_game.select("class.sec-team").text();
-                    String firstComand = next_game.select("class.first-team").text();
-                    String TimeAndPlace = dats.text();
+                    secondComand = next_game.select("class.sec-team").text();
+                    firstComand = next_game.select("class.first-team").text();
+                    TimeAndPlace = dats.text();
                 }
             }
         }catch (ParserException e)
