@@ -1,0 +1,21 @@
+<component name="libraryTable">
+  <library name="org.jsoup:jsoup:1.9.2" type="repository">
+    <properties maven-id="org.jsoup:jsoup:1.9.2" />
+    <CLASSES>
+      <root url="jar://$MAVEN_REPOSITORY$/org/jsoup/jsoup/1.9.2/jsoup-1.9.2.jar!/" />
+      <root url="jar://C:/Program Files/Java/jdk1.8.0_73/javax.mail-1.4.5.jar!/" />
+      <root url="jar://C:/Program Files/Java/jdk1.8.0_73/smtp-1.4.4.jar!/" />
+      <root url="jar://C:/Program Files/Java/jdk1.8.0_73/activation-1.1.jar!/" />
+      <root url="jar://C:/Program Files/Java/jdk1.8.0_73/google-api-services-calendar-v3-rev57-1.13.2-beta.jar!/" />
+      <root url="file://C:/Program Files/Java/google-api-java-client/libs" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES>
+      <root url="file://C:/Program Files/Java/google-api-java-client/libs" />
+      <root url="jar://C:/Program Files/Java/jdk1.8.0_73/google-http-client-jackson2-1.14.0-beta-sources.jar!/" />
+      <root url="jar://C:/Program Files/Java/jdk1.8.0_73/google-http-client-jackson-1.11.0-beta-sources.jar!/" />
+    </SOURCES>
+    <jarDirectory url="file://C:/Program Files/Java/google-api-java-client/libs" recursive="false" />
+    <jarDirectory url="file://C:/Program Files/Java/google-api-java-client/libs" recursive="false" type="SOURCES" />
+  </library>
+</component>
